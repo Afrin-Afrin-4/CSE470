@@ -1,0 +1,172 @@
+.smooth-demo-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.demo-title {
+  text-align: center;
+  color: #1e293b;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.demo-section {
+  margin-bottom: 3rem;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e2e8f0;
+}
+
+.demo-section h3 {
+  color: #4f46e5;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+/* Button Styles */
+.demo-button {
+  background: linear-gradient(135deg, #4f46e5, #60a5fa);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(79, 70, 229, 0.2);
+}
+
+.demo-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(79, 70, 229, 0.3);
+}
+
+.demo-button:active {
+  transform: translateY(0);
+}
+
+/* Fade Animation */
+.fade-box {
+  margin-top: 1rem;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #818cf8, #a5b4fc);
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.fade-box.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-box p {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+/* Hover Effects */
+.hover-box {
+  padding: 2rem;
+  background: #f1f5f9;
+  border-radius: 8px;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 2px dashed #94a3b8;
+}
+
+.hover-box:hover,
+.hover-box.hovered {
+  background: linear-gradient(135deg, #4f46e5, #60a5fa);
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(79, 70, 229, 0.3);
+  border-color: transparent;
+}
+
+.hover-box p {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+/* Mouse Follower */
+.mouse-follower {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #0ea5e9, #0284c7);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transition: transform 0.1s ease-out;
+  box-shadow: 0 0 15px rgba(14, 165, 233, 0.5);
+}
+
+/* Smooth Transitions */
+.transition-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.transition-box {
+  padding: 1.5rem;
+  background: #f1f5f9;
+  border-radius: 8px;
+  text-align: center;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  max-width: 400px;
+}
+
+.transition-box:hover {
+  background: linear-gradient(135deg, #10b981, #059669);
+  color: white;
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 15px 30px rgba(16, 185, 129, 0.3);
+}
+
+.transition-box p {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .smooth-demo-container {
+    padding: 1rem;
+  }
+  
+  .demo-section {
+    padding: 1rem;
+  }
+  
+  .demo-title {
+    font-size: 1.6rem;
+  }
+  
+  .demo-section h3 {
+    font-size: 1.2rem;
+  }
+  
+  .demo-button {
+    width: 100%;
+    padding: 0.7rem 1rem;
+  }
+  
+  .hover-box,
+  .transition-box {
+    padding: 1.2rem;
+  }
+}

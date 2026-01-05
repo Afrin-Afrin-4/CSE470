@@ -1,0 +1,55 @@
+.certificate-generator {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+}
+
+.certificate-generator h3 {
+  margin-top: 0;
+  color: #343a40;
+}
+
+.certificate-incomplete {
+  text-align: center;
+  padding: 1rem;
+}
+
+.certificate-incomplete p {
+  margin: 0.5rem 0;
+  color: #6c757d;
+}
+
+.certificate-available {
+  text-align: center;
+  padding: 1rem;
+}
+
+.certificate-available p {
+  margin: 0.5rem 0;
+  color: #28a745;
+  font-weight: 600;
+}
+
+.certificate-action {
+  text-align: center;
+  padding: 1rem;
+}
+
+.certificate-action p {
+  margin: 0.5rem 0;
+  color: #343a40;
+}
+
+.error-message {
+  color: #dc3545;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .certificate-generator {
+    padding: 1rem;
+  }
+}
